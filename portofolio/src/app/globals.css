@@ -4,30 +4,23 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #09162e;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.h1,.logo{
+    background: linear-gradient(60deg,#204abd,#f222cc );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.p{
+  background: linear-gradient(10deg,#204abd,#2a8dde );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.img{
+  border: 10px solid #204abd;
 }
